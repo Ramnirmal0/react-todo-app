@@ -1,0 +1,76 @@
+$background:#51c4d3;
+$primary: #126e82;
+$primary-font:white;
+$secondary:#132c33;
+$btn-success:rgb(38, 156, 38);
+$btn-danger:rgb(240, 20, 20);
+$content-font : 20px;
+
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.App{
+    background-color: $background;
+    margin: 15px 0px;
+    width: 320px;
+    border-radius: 20px;
+    overflow: hidden;
+    .Nav{
+        display: flex;
+        justify-content: space-between;
+        background-color: $primary ;
+        padding:0px 15px;
+        color:$primary-font;
+        
+    }
+    .display-container{
+        height: 400px;
+        padding: 0px 25px;
+
+        h3{
+            display: flex;
+    justify-content: space-between;
+        }
+
+        button{
+            border-radius: 3px;
+            border:none;
+            background-color: $btn-danger;
+            color:$primary-font;
+        }
+
+      
+    }
+    .input-container{
+        display: block;
+        padding:20px 15px;
+        background-color: $secondary;
+        
+
+        input{
+            width: -webkit-fill-available;
+            height: 25px;
+            border:none;
+            border-radius: 5px;
+            padding:3px 5px;
+            outline: none;
+        }
+        button{
+            width: -webkit-fill-available;
+            height: 31px;
+            margin-top: 7px;
+            border: none;
+            outline: none;
+            border-radius: 25px;
+            background-color: $btn-success;
+            color:$primary-font;
+            font-size: 17px;
+            font-weight: bold;
+        }
+        
+    }
+}
+

@@ -1,9 +1,18 @@
 import React from 'react';
+import Add from './component/Add';
+import Display from './component/Display';
+import Navbar from './component/Navbar';
+import { StateProvider } from './context/ToDoContext';
+
 
 function App() {
   return (
     <div className="App">
-             <h1>ToDo application</h1>
+          <StateProvider>
+            <Navbar/>
+            <Display/>
+            <Add/>
+         </StateProvider>
     </div>
   );
 }
